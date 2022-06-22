@@ -1,0 +1,16 @@
+.btn {
+  padding: 8px;
+}
+
+.light {
+  padding: 8px;
+  background: #fff;
+  color: #141d2f;
+}
+
+.dark {
+  padding: 8px;
+  background: #141d2f;
+  color: #fff;
+}
+

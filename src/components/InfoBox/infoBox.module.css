@@ -1,0 +1,27 @@
+.info-box {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+}
+
+.info-box__left {
+}
+
+.info-box__right {
+  flex-grow: 1;
+}
+
+/* Avatar */
+
+.avatar-container {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 117px;
+  height: 117px;
+}
+
+.avatar-container img {
+  width: 100%;
+}

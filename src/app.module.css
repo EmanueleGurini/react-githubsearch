@@ -1,0 +1,16 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 300px;
+}
+.devfinder {
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+.devfinder > header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}

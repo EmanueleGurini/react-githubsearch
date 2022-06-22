@@ -1,13 +1,31 @@
-body {
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #f6f8ff;
+}
+
+/* Fonts */
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+h4 {
+  font-size: 13px;
+  line-height: 20px;
 }
