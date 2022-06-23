@@ -21,10 +21,10 @@ export interface IData {
   company: string;
   blog: string;
   location: string;
-  email?: any;
-  hireable?: any;
-  bio?: any;
-  twitter_username?: any;
+  email?: string;
+  hireable?: boolean;
+  bio?: string;
+  twitter_username?: string;
   public_repos: number;
   public_gists: number;
   followers: number;

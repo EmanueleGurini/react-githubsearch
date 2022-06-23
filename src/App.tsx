@@ -55,7 +55,7 @@ export default function App() {
             inputChange={user}
             resultExist={userData?.userExist}
           />
-          <InfoBox userData={userData.data} />
+          <InfoBox userData={userData?.data} />
         </div>
       </div>
   );
