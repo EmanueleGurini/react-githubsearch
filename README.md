@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./src/assets/img/screenshot.jpg)
+![Screenshot](./src/assets/img/screenshot.png)
 
 ### Links
 
