@@ -8,6 +8,7 @@ import IconLink from "../../assets/icons/icon-link.svg";
 import IconTwitter from "../../assets/icons/icon-twitter.svg";
 import IconCompany from "../../assets/icons/icon-company.svg";
 import { ThemeContext } from "../../commons/context/context";
+import { getJoinedProfile } from "../../commons/api/api";
 
 interface IInfoBox {
   userData: IData | null;
@@ -142,7 +143,7 @@ const InfoBox: React.FC<IInfoBox> = ({ userData }) => {
             </div>
             <div className={styles["user-primary-info__right"]}>
               <p className={styles[`user-primary-info__created--${theme}`]}>
-                Joined 23 june 2022
+                {getJoinedProfile(userData?.created_at)}
               </p>
             </div>
           </div>
