@@ -6,6 +6,7 @@ import styles from "./app.module.css";
 import SearchBar from "./components/SearchBar/SearchBar";
 import InfoBox from "./components/InfoBox/InfoBox";
 import Button from "./components/BtnTheme/BtnTheme";
+import Signature from "./components/Signature/Signature";
 import { IUserData } from "./commons/interfaces/IApp";
 import { getData, setBackgroundTheme } from "./commons/api/api";
 import { ThemeContext } from "./commons/context/context";
@@ -67,6 +68,7 @@ export default function App() {
             resultExist={userData?.userExist}
           />
           <InfoBox userData={userData?.data} />
+          <Signature />
         </div>
       </div>
     </ThemeContext.Provider>
