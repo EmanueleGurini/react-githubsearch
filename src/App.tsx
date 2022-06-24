@@ -19,7 +19,6 @@ export default function App() {
     userExist: true,
   });
 
-  let theme = !light ? "light" : "dark";
   /**
    * This function updates 'click' state value adding one on it
    */
@@ -48,6 +47,8 @@ export default function App() {
   useEffect(() => {
     setBackgroundTheme(light);
   }, [light]);
+
+  let theme = !light ? "light" : "dark";
 
   return (
     <ThemeContext.Provider value={{ light, setLight }}>

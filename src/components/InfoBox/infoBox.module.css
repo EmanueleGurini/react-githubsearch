@@ -114,6 +114,11 @@
   width: 100%;
 }
 
+/*===================================
+  MEDIA QUERIES 
+===================================*/
+
+/* Tablet */
 @media screen and (max-width: 768px) {
   .info-box__left {
     display: none;
@@ -134,6 +139,7 @@
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 375px) {
   .contact-info > div {
     width: 100%;

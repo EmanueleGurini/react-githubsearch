@@ -72,6 +72,12 @@ input[type="text"]:focus {
   font-size: 18px;
 }
 
+/*===================================
+  MEDIA QUERIES 
+===================================*/
+
+/* Mobile */
+
 @media screen and (max-width: 375px) {
   .search-bar > button {
     font-size: 13px;
