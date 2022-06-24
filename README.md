@@ -34,7 +34,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./src/assets/img/screenshot.png)
+![Screenshot Light](./src/assets/img/screenshot.png)
+![Screenshot Dark](./src/assets/img/screenshot-dark.png)
+![Screenshot User Not Found](./src/assets/img/screenshot-user-not-found.png)
 
 ### Links
 
