@@ -1,6 +1,6 @@
-import * as React from 'react';
-import styles from './searchBar.module.css';
-import IconLens from '../../assets/icons/icon-lens.svg';
+import * as React from "react";
+import styles from "./searchBar.module.css";
+import IconLens from "../../assets/icons/icon-lens.svg";
 
 interface ISearchBar {
   handleInputChange: (value: string) => void;
@@ -20,15 +20,15 @@ const SearchBar: React.FC<ISearchBar> = ({
   };
 
   let messageAlert = (
-    <div className={styles['search-bar__alert']}>
-      {' '}
-      <h3>No result</h3>{' '}
+    <div className={styles["search-bar__alert"]}>
+      {" "}
+      <h3>No result</h3>{" "}
     </div>
   );
 
   return (
-    <section className={styles['search-bar']}>
-      <div className={styles['search-bar__left']}>
+    <section className={styles["search-bar"]}>
+      <div className={styles["search-bar__left"]}>
         <img src={IconLens} />
         <input
           value={inputChange}

@@ -1,11 +1,12 @@
 .container {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 48px auto 0;
   height: 300px;
 }
 .devfinder {
   max-width: 730px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .devfinder > header {
@@ -13,4 +14,8 @@
   display: flex;
   justify-content: space-between;
   padding: 16px;
+}
+
+.red {
+  background: red;
 }

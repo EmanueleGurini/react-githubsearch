@@ -1,19 +1,20 @@
-import * as React from 'react';
-import styles from './button.module.css';
+import React from "react";
+import { useContext } from "react";
+
+import styles from "./button.module.css";
+import { ThemeContext } from "../../commons/context/context";
 
 const Button = () => {
-  //let btnTheme = light ? 'light' : 'dark';
+  const { light, setLight } = useContext(ThemeContext);
 
-  //const setBtnColor = () => {
-  // let value = light ? false : true;
-  //  setLight(value);
-  //};
+  let btnTheme = light ? "light" : "dark";
 
-  return (
-    <button>
-      Light
-    </button>
-  );
+  const setBtnColor = () => {
+    let value = light ? false : true;
+    setLight(value);
+  };
+
+  return <button onClick={setBtnColor}>Light</button>;
 };
 
 export default Button;

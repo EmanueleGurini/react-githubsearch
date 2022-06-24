@@ -1,3 +1,4 @@
+/* INFO BOX */
 .info-box {
   background: #fff;
   border-radius: 15px;
@@ -16,58 +17,105 @@
 /* InfoBox Right */
 .info-box__right {
   flex-grow: 1;
-  padding:  16px;
+  padding: 16px;
 }
 
-/* Right-Top */
-.right-top__data {
+/* User Primary Info */
+.user-primary-info__avatar {
+  display: none;
+}
+
+.user-primary-info__data {
   display: flex;
   margin-bottom: 24px;
   justify-content: space-between;
 }
 
-/* Right-Middle */
-.right-middle {
+.user-primary-info__left > p {
+  color: #0079ff;
+}
+
+/* User Secondary Info */
+.user-secondary-info {
   margin-bottom: 24px;
 }
-.right-middle__description {
+
+.user-secondary-info__description {
   margin-bottom: 24px;
 }
-.right-middle__statistics {
-  background: #F6F8FF;
+
+.user-secondary-info__statistics {
+  background: #f6f8ff;
   border-radius: 15px;
   display: flex;
-  padding: 24px;  
+  padding: 24px;
 }
-.right-middle__statistics > div {
+
+.user-secondary-info__statistics > div {
   flex-grow: 1;
 }
 
-/* Right-Bottom */
-.right-bottom {
+/* Contact Info */
+.contact-info {
   display: flex;
   flex-wrap: wrap;
 }
 
-.right-bottom > div {
+.contact-info > div {
   display: flex;
-  gap:  16px;
-  width: 50%;
+  gap: 16px;
   padding: 16px 0;
+  width: 50%;
 }
 
-.right-bottom > div > img {
+.contact-info > div > img {
   height: 20px;
 }
-/* Avatar */
 
+/* Avatar */
 .avatar-container {
   border-radius: 50%;
   overflow: hidden;
-  width: 117px;
   height: 117px;
+  width: 117px;
 }
 
 .avatar-container img {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .info-box__left {
+    display: none;
+  }
+
+  .user-primary-info {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .user-primary-info__avatar {
+    display: block;
+  }
+
+  .user-primary-info__data {
+    flex-direction: column;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-info > div {
+    width: 100%;
+  }
+
+  .avatar-container {
+    height: 70px;
+    width: 70px;
+  }
+
+  .user-secondary-info__statistics > div > h2,
+  .user-secondary-info__statistics > div > h4 {
+    text-align: center;
+  }
 }
