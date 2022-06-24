@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/EmanueleGurini/react-githubsearch)
-- Live Site URL: [Add live site URL here](https://react-githubsearch-f63e3.web.app/)
+- Solution URL: [Repository](https://github.com/EmanueleGurini/react-githubsearch)
+- Live Site URL: [Deploy](https://react-githubsearch-f63e3.web.app/)
 
 ### Built with
 
