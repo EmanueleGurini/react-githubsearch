@@ -1,10 +1,10 @@
 # Frontend Mentor - GitHub user search app solution
 
-I'm still working on this challenge. 
-Some months ago I had already done this challenge, but I was not satisfied with Material UI, which I used to build all the components; so, I decided to start again with raw CSS. 
-Do not use MUI. 
+I'm still working on this challenge.
+Some months ago I had already done this challenge, but I was not satisfied with Material UI, which I used to build all the components; so, I decided to start again with raw CSS.
+Do not use MUI.
 
-This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/assets/screenshot.jpg)
-
+![Screenshot](./src/assets/img/screenshot.jpg)
 
 ### Links
 
@@ -59,4 +58,3 @@ Users should be able to:
 - Website - [Emanuele Gurini](https://www.emanuelegurini.com)
 - Frontend Mentor - [@EmanueleGurini](https://www.frontendmentor.io/profile/EmanueleGurini)
 - Twitter - [@EmanueleGurini](https://www.twitter.com/EmanueleGurini)
-
