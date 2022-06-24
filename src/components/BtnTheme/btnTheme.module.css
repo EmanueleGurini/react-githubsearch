@@ -1,15 +1,17 @@
 .btn {
+  align-items: center;
+  border: none;
+  background: transparent;
+  display: flex;
+  gap: 8px;
   padding: 8px;
+  text-transform: uppercase;
 }
 
 .light {
-  padding: 8px;
-  background: #fff;
-  color: #141d2f;
+  color: #fff;
 }
 
 .dark {
-  padding: 8px;
-  background: #141d2f;
-  color: #fff;
+  color: #697c9a;
 }

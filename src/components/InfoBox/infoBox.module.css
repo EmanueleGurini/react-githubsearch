@@ -1,12 +1,20 @@
 /* INFO BOX */
 .info-box {
-  background: #fff;
   border-radius: 15px;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   display: flex;
   justify-content: space-between;
   padding: 16px;
   width: 100%;
+}
+
+.infobox-light {
+  background: #fff;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+.infobox-dark {
+  background: #1e2a47;
+  box-shadow: none;
 }
 
 /* InfoBox Left */
@@ -31,11 +39,26 @@
   justify-content: space-between;
 }
 
+.user-primary-info__name--dark,
+.user-primary-info__created--dark {
+  color: #fff;
+}
+
 .user-primary-info__left > p {
   color: #0079ff;
 }
 
 /* User Secondary Info */
+
+.user-secondary-info__statistics--light {
+  background: #f6f8ff;
+}
+
+.user-secondary-info__statistics--dark {
+  background: #141d2f;
+  color: #fff;
+}
+
 .user-secondary-info {
   margin-bottom: 24px;
 }
@@ -44,8 +67,11 @@
   margin-bottom: 24px;
 }
 
+.user-secondary-info__bio--dark {
+  color: #fff;
+}
+
 .user-secondary-info__statistics {
-  background: #f6f8ff;
   border-radius: 15px;
   display: flex;
   padding: 24px;
@@ -70,6 +96,10 @@
 
 .contact-info > div > img {
   height: 20px;
+}
+
+.contact-info-dark {
+  color: #fff;
 }
 
 /* Avatar */

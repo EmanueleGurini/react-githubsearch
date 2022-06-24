@@ -7,7 +7,7 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import InfoBox from "./components/InfoBox/InfoBox";
 import Button from "./components/BtnTheme/BtnTheme";
 import { IUserData } from "./commons/interfaces/IApp";
-import { getData } from "./commons/api/api";
+import { getData, setBackgroundTheme } from "./commons/api/api";
 import { ThemeContext } from "./commons/context/context";
 
 export default function App() {
@@ -19,12 +19,19 @@ export default function App() {
     userExist: true,
   });
 
+  let theme = !light ? "light" : "dark";
   /**
    * This function updates 'click' state value adding one on it
    */
   const handleClick = (): void => {
     setClick(click + 1);
   };
+
+  useEffect(() => {
+    getData("octocat").then((res) =>
+      setUserData({ data: res, userExist: true })
+    );
+  }, []);
 
   useEffect(() => {
     if (click === 0) return;
@@ -39,17 +46,17 @@ export default function App() {
   }, [click]);
 
   useEffect(() => {
-    getData("octocat").then((res) =>
-      setUserData({ data: res, userExist: true })
-    );
-  }, []);
+    setBackgroundTheme(light);
+  }, [light]);
 
   return (
     <ThemeContext.Provider value={{ light, setLight }}>
-      <div className={`${styles.container} ${light ? styles.red : null}`}>
+      <div className={`${styles.container}`}>
         <div className={styles.devfinder}>
           <header>
-            <h1>devfinder</h1>
+            <h1 className={`${styles[`header__title--${theme}`]}`}>
+              devfinder
+            </h1>
             <Button />
           </header>
           <SearchBar

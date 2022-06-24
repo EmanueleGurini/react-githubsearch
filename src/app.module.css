@@ -16,6 +16,6 @@
   padding: 16px;
 }
 
-.red {
-  background: red;
+.header__title--light {
+  color: #fff;
 }

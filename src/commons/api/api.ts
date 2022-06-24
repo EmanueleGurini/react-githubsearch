@@ -4,3 +4,8 @@ export const getData = async (user: string) => {
   );
   return data;
 };
+
+export const setBackgroundTheme = (light: boolean): void => {
+  let backgroundColor = light ? "#f6f8ff" : "#141D2F";
+  document.body.style.background = backgroundColor;
+};
