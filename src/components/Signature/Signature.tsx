@@ -1,12 +1,13 @@
 import React from "react";
 
+import styles from "./signature.module.css";
+
 const Signature: React.FC = () => {
 	return (
-		<div>
-			<p style={{ textAlign: "center", padding: "24px 16px" }}>
+		<div className={styles.signature}>
+			<p>
 				Made with &hearts; by Emanuele Gurini -{" "}
 				<a
-					style={{ textDecoration: "none", color: "#697c9a" }}
 					href="https://github.com/EmanueleGurini/react-githubsearch"
 					target="_blank"
 				>

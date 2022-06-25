@@ -96,19 +96,19 @@ const ContactInfo: React.FC<IContactInfo> = ({
         </p>
       </div>
       <div>
-        <img src={IconTwitter} />
+        <img src={IconTwitter} alt="Twitter Icon" />
         <p className={`${styles[`contact-info-${theme}`]}`}>
           {twitterUserName ? twitterUserName : "Not Avaiable"}
         </p>
       </div>
       <div>
-        <img src={IconLink} />
+        <img src={IconLink} alt="Link Icon" />
         <p className={`${styles[`contact-info-${theme}`]}`}>
           {blog ? blog : "Not Avaiable"}
         </p>
       </div>
       <div>
-        <img src={IconCompany} />
+        <img src={IconCompany} alt="Company Icon" />
         <p className={`${styles[`contact-info-${theme}`]}`}>
           {company ? company : "Not Avaiable"}
         </p>

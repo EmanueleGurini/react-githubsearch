@@ -37,7 +37,7 @@ const SearchBar: React.FC<ISearchBar> = ({
       className={`${styles["search-bar"]} ${styles[`search-bar--${theme}`]}`}
     >
       <div className={styles["search-bar__left"]}>
-        <img src={IconLens} />
+        <img src={IconLens} alt="Lens Icon" />
         <input
           value={inputChange}
           type="text"

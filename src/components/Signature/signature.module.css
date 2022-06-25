@@ -1,0 +1,9 @@
+.signature > p {
+	padding: 24px 16px;
+	text-align: center;
+}
+
+.signature > p > a {
+	color: #697c9a;
+	text-decoration: none;
+}
