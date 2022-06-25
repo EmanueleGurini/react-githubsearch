@@ -7,7 +7,7 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import InfoBox from "./components/InfoBox/InfoBox";
 import Button from "./components/BtnTheme/BtnTheme";
 import Signature from "./components/Signature/Signature";
-import { IUserData } from "./commons/interfaces/IApp";
+import { IUserData, IData } from "./commons/interfaces/IApp";
 import { getData, setBackgroundTheme } from "./commons/api/api";
 import { ThemeContext } from "./commons/context/context";
 
@@ -28,16 +28,16 @@ export default function App() {
   };
 
   useEffect(() => {
-    getData("octocat").then((res) =>
+    getData("octocat").then((res: any) =>
       setUserData({ data: res, userExist: true })
     );
   }, []);
 
   useEffect(() => {
     if (click === 0) return;
-    getData(user).then((res) => {
+    getData(user).then((res: any) => {
       if (!res.name) {
-        getData("octocat").then((res) =>
+        getData("octocat").then((res: any) =>
           setUserData({ data: res, userExist: false })
         );
       }

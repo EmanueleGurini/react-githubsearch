@@ -5,9 +5,8 @@
  *
  * */
 export const getData = async (user: string) => {
-  let data = await fetch(`https://api.github.com/users/${user}`).then((res) =>
-    res.json()
-  );
+  let data = await fetch(`https://api.github.com/users/${user}`);
+  data = await data.json();
   return data;
 };
 
